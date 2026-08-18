@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChamberSathi — Offline case management for advocates</title>
+    <meta
+      name="description"
+      content="ChamberSathi keeps cases, clients, hearings, tasks, documents, and payments on your phone. Encrypted. No account. No cloud. Community Edition is free forever."
+    />
+    <link rel="canonical" href="https://chambersathi.com/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chambersathi.com/" />
+    <meta property="og:title" content="ChamberSathi — Offline case management for advocates" />
+    <meta
+      property="og:description"
+      content="Your chamber, on this phone. Nothing is uploaded. Community is free forever. Pro is ₹599 per year on Google Play."
+    />
+    <meta name="theme-color" content="#0E4A52" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ChamberSathi",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Android",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Community Edition",
+            "price": "0",
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "599",
+            "priceCurrency": "INR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "599",
+              "priceCurrency": "INR",
+              "billingDuration": "P1Y"
+            }
+          }
+        ],
+        "description": "Offline-first case management for advocates. Encrypted local storage, no account, no cloud sync.",
+        "url": "https://chambersathi.com/"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <img src="/assets/logo.svg" alt="" width="36" height="36" />
+          <span>ChamberSathi</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="nav" data-nav aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#pricing">Community &amp; Pro</a>
+          <a href="/privacy/">Privacy policy</a>
+          <a class="btn btn-gold" href="#get-app">Get the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <p class="eyebrow">For advocates · Android</p>
+            <h1>Your chamber, on this phone. <em>Nothing uploaded.</em></h1>
+            <p class="lede">
+              ChamberSathi manages cases, clients, hearings, tasks, documents, and a payments ledger
+              entirely on-device. There is no ChamberSathi account, no cloud sync, and no internet
+              required. Community Edition is free forever.
+            </p>
+            <div class="hero-actions" id="get-app">
+              <span class="btn btn-gold coming-soon">
+                Coming soon on Google Play
+                <small>Android · com.chambersathi.app</small>
+              </span>
+              <a class="btn btn-ghost" href="/privacy/">Read the privacy policy</a>
+            </div>
+            <div class="trust">
+              <span class="chip">No account</span>
+              <span class="chip">Encrypted SQLite</span>
+              <span class="chip">Works in airplane mode</span>
+              <span class="chip">PIN + biometric lock</span>
+            </div>
+          </div>
+          <div aria-hidden="true">
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="phone-bar">
+                  <strong>Good morning</strong>
+                  <span>Tue 18 Aug</span>
+                </div>
+                <div class="docket">
+                  <div class="docket-head">
+                    <span>Today’s board</span>
+                    <b>3</b>
+                  </div>
+                  <div class="week">
+                    <span>Mo</span><span>Tu</span><span class="on">We</span><span>Th</span><span>Fr</span>
+                  </div>
+                  <div class="court">City Civil Court</div>
+                  <div class="hearing">
+                    <strong>Sharma v. State</strong>
+                    <span>10:30</span>
+                    <small>Court 4 · CS/142/2024</small>
+                  </div>
+                  <div class="hearing">
+                    <strong>Patel — S.A. 12</strong>
+                    <span>11:15</span>
+                    <small>Court 4 · next date listed</small>
+                  </div>
+                  <div class="court">Sessions Court</div>
+                  <div class="hearing">
+                    <strong>State v. Khan</strong>
+                    <span>14:00</span>
+                    <small>Court 2 · reminder set</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="wrap">
+          <h2>A morning docket, not another SaaS login.</h2>
+          <p class="section-intro">
+            Built for a single device. Your practice data lives in an encrypted local database and
+            the app’s sandboxed files. You choose if — and where — a backup file is saved.
+          </p>
+          <div class="features">
+            <article class="card">
+              <div class="mark">1</div>
+              <h3>Today’s hearing board</h3>
+              <p>Hearings grouped by court, with a week strip so you can jump a day without leaving Home.</p>
+            </article>
+            <article class="card">
+              <div class="mark">2</div>
+              <h3>Cases &amp; clients</h3>
+              <p>Search by title, number, or client. Link matters, court details, and an optional next date.</p>
+            </article>
+            <article class="card">
+              <div class="mark">3</div>
+              <h3>Calendar &amp; tasks</h3>
+              <p>Month or list view of hearings, plus open / overdue / due-today tasks — including standalone work.</p>
+            </article>
+            <article class="card">
+              <div class="mark">4</div>
+              <h3>Documents on-device</h3>
+              <p>Camera, photo library, or files. Attachments stay in the app sandbox, not in a ChamberSathi cloud.</p>
+            </article>
+            <article class="card">
+              <div class="mark">5</div>
+              <h3>Payments ledger</h3>
+              <p>Outstanding, open, and received amounts per client and case. Currency-aware; INR by default.</p>
+            </article>
+            <article class="card">
+              <div class="mark">6</div>
+              <h3>Lock, backup, import</h3>
+              <p>
+                PIN and optional biometrics. Encrypted <code>.csbak</code> backup. JSON export, and
+                offline eCourts “My Cases” file import — still no live court sync.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section privacy-band" id="privacy">
+        <div class="wrap">
+          <div>
+            <p class="eyebrow">Privacy by architecture</p>
+            <h2>We cannot see your cases.</h2>
+            <p>
+              ChamberSathi v1 does not operate a server that receives case contents. There is no
+              login, no multi-device sync, and no advertising SDK. Core features keep working if
+              Play Billing or crash reporting is unreachable — including in airplane mode.
+            </p>
+            <p>
+              Read the full disclosure we use for Google Play:
+              <a href="/privacy/">chambersathi.com/privacy</a>
+            </p>
+          </div>
+          <div>
+            <table class="leave-table">
+              <thead>
+                <tr>
+                  <th>Channel</th>
+                  <th>Leaves the device?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cases, clients, hearings, documents, PIN</td>
+                  <td>No — encrypted storage on the phone</td>
+                </tr>
+                <tr>
+                  <td>Backup / JSON you share</td>
+                  <td>Only if you use the OS share sheet</td>
+                </tr>
+                <tr>
+                  <td>Google Play Billing</td>
+                  <td>Purchase / restore of the Pro subscription (₹599 / year)</td>
+                </tr>
+                <tr>
+                  <td>Firebase Crashlytics</td>
+                  <td>Optional anonymous diagnostics; opt out in Settings</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="pricing">
+        <div class="wrap">
+          <h2>Community forever. Pro is ₹599 a year.</h2>
+          <p class="section-intro">
+            Community stays free on this device with limits. Pro is billed annually through Google
+            Play for this Android app only — it does not unlock a Windows product, and it does not
+            add cloud sync.
+          </p>
+          <div class="plans">
+            <article class="plan">
+              <div class="label">Default</div>
+              <h3>Community</h3>
+              <p>Forever usable on this device. No account required.</p>
+              <ul>
+                <li>Up to 10 ACTIVE cases</li>
+                <li>Up to 50 MB of local documents</li>
+                <li>Clients, calendar, tasks, payments, PIN lock</li>
+                <li>Encrypted local backup and JSON export</li>
+                <li>Hearing board PDF export not included</li>
+              </ul>
+            </article>
+            <article class="plan featured">
+              <div class="label">Google Play · Android</div>
+              <h3>Pro</h3>
+              <p class="price">₹599 <span>/ year</span></p>
+              <p>Billed annually on this Android app. Restore after reinstall with the same Google account. Cancel in Google Play anytime.</p>
+              <ul>
+                <li>Unlimited ACTIVE cases</li>
+                <li>Unlimited local document storage</li>
+                <li>Hearing board PDF export from this device</li>
+                <li>Does not include cloud backup or cross-device unlock</li>
+                <li>Does not unlock Windows</li>
+              </ul>
+            </article>
+          </div>
+          <p class="fine-print">
+            Community Edition remains available if you never subscribe to Pro. There is no
+            ChamberSathi license server in v1. Price is Rs. 599 per year via Google Play.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="wrap">
+          <h2>Questions advocates actually ask</h2>
+          <div class="faq">
+            <details>
+              <summary>Does ChamberSathi need the internet?</summary>
+              <p>
+                No. Practice data is local. Reminders are scheduled on the device. You only need a
+                network for optional crash reports, a Play purchase/restore, or if you yourself share
+                a backup file through Drive, email, or similar.
+              </p>
+            </details>
+            <details>
+              <summary>What if I forget my PIN?</summary>
+              <p>
+                There is no email reset. You can unlock with biometrics if you enabled them, restore
+                from an encrypted backup you already saved, or wipe local data and start over.
+              </p>
+            </details>
+            <details>
+              <summary>Can I move to a new phone?</summary>
+              <p>
+                Export an encrypted <code>.csbak</code> backup, restore it on the new device, then
+                tap Restore purchases with the same Google account if you bought Pro. Android and
+                Windows licenses are not shared in v1.
+              </p>
+            </details>
+            <details>
+              <summary>Is Pro a subscription?</summary>
+              <p>
+                Community is free forever with limits. Pro is Rs. 599 per year on Google Play for
+                this Android app. Google handles billing and renewal; you can cancel in Play
+                subscriptions. Letting Pro lapse returns the app to Community limits — your local
+                data stays on the device.
+              </p>
+            </details>
+            <details>
+              <summary>iOS or Windows?</summary>
+              <p>
+                v1 is Android. A Windows product is planned as a separate app with its own store
+                license. iOS is out of scope for this release.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>© 2026 ChamberSathi. Offline case management for advocates.</div>
+        <div>
+          <a href="/privacy/">Privacy policy</a>
+          ·
+          <a href="mailto:chambersathi@gmail.com">chambersathi@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

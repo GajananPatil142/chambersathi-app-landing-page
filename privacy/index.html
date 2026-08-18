@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy policy — ChamberSathi</title>
+    <meta
+      name="description"
+      content="ChamberSathi Offline privacy policy: practice data stays on your device. No ChamberSathi account or cloud sync. Optional Crashlytics and Google Play Billing only."
+    />
+    <link rel="canonical" href="https://chambersathi.com/privacy/" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://chambersathi.com/privacy/" />
+    <meta property="og:title" content="Privacy policy — ChamberSathi" />
+    <meta
+      property="og:description"
+      content="Public privacy policy for ChamberSathi Offline (Android). Use this URL in Google Play Console."
+    />
+    <meta name="theme-color" content="#0E4A52" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">
+          <img src="/assets/logo.svg" alt="" width="36" height="36" />
+          <span>ChamberSathi</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="nav" data-nav aria-label="Primary">
+          <a href="/#features">Features</a>
+          <a href="/#pricing">Community &amp; Pro</a>
+          <a href="/privacy/">Privacy policy</a>
+          <a class="btn btn-gold" href="/#get-app">Get the app</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="legal">
+      <div class="wrap">
+        <header class="legal-header">
+          <p class="eyebrow">Google Play · Data safety source</p>
+          <h1>Privacy policy</h1>
+          <p>
+            ChamberSathi Offline is a single-device case management app for advocates. Last updated
+            17 August 2026.
+          </p>
+        </header>
+
+        <article class="legal-doc">
+          <p class="notice">
+            There is <strong>no ChamberSathi user account</strong> and
+            <strong>no ChamberSathi cloud sync backend</strong> in this version. We do not operate a
+            server that receives your case contents.
+          </p>
+
+          <h2>1. Who we are</h2>
+          <p>
+            ChamberSathi (“we”) publishes the Android app ChamberSathi (package
+            <code>com.chambersathi.app</code>). This policy describes how the app handles information
+            on your device and the limited cases where data may leave the device.
+          </p>
+          <p>
+            Contact:
+            <a href="mailto:chambersathi@gmail.com">chambersathi@gmail.com</a>
+          </p>
+
+          <h2>2. Data stored on your device</h2>
+          <p>
+            The following stay in an <strong>encrypted local database</strong> (SQLCipher) and the
+            app’s sandboxed file storage on your phone:
+          </p>
+          <ul>
+            <li>Profile, clients, cases, hearings, tasks, events, documents, and payments</li>
+            <li>App unlock PIN (stored as a salted hash) and related security settings</li>
+            <li>Local encrypted backups you create (you choose where to save the file)</li>
+          </ul>
+          <p>
+            The database encryption key is kept in the OS secure keystore (via the platform secure
+            storage API), not in a plain file you can copy. Unlocking the UI with PIN or biometrics
+            does not send those secrets to ChamberSathi.
+          </p>
+
+          <h2>3. Data that may leave the device</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Channel</th>
+                <th>What</th>
+                <th>Why</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>OS share sheet (you initiate)</td>
+                <td>
+                  Encrypted <code>.csbak</code> backup, or an unencrypted JSON export of
+                  clients, cases, hearings, tasks, events, and payments
+                </td>
+                <td>
+                  You choose where the file goes (Files, Drive, email, USB). ChamberSathi does not
+                  upload it.
+                </td>
+              </tr>
+              <tr>
+                <td>Google Play Billing</td>
+                <td>Purchase / restore of the Pro subscription (Rs. 599 per year)</td>
+                <td>Process the store transaction on this Android app</td>
+              </tr>
+              <tr>
+                <td>Firebase Crashlytics (optional)</td>
+                <td>
+                  Anonymous crash and diagnostic metadata (for example app version, build channel,
+                  non-PII feature flags such as whether unlimited-cases is entitled)
+                </td>
+                <td>Improve app stability</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Crash reporting is <strong>on by default</strong> and can be turned off in
+            <strong>Settings → Privacy → Share crash reports</strong>. Crash reports
+            <strong>must not</strong> include client names, phone numbers, emails, CNRs, case notes,
+            document file names, backup passphrases, PIN/biometric secrets, or raw license/receipt
+            payloads.
+          </p>
+          <p>
+            If Crashlytics or Play Billing is unreachable (for example airplane mode),
+            <strong>core app features continue to work</strong> offline. Crash reports may queue and
+            upload later when a connection is available.
+          </p>
+
+          <h2>4. What we do not do (v1)</h2>
+          <ul>
+            <li>No ChamberSathi account or login</li>
+            <li>No cloud backup or multi-device sync of case data</li>
+            <li>No advertising SDK</li>
+            <li>
+              No Firebase Auth, Firestore, Storage, Remote Config, or Analytics for product features
+            </li>
+            <li>
+              Pro unlock on Android via Google Play does <strong>not</strong> unlock a Windows
+              product
+            </li>
+          </ul>
+
+          <h2>5. Your choices</h2>
+          <ul>
+            <li>
+              Turn off crash reporting anytime: <strong>Settings → Privacy → Share crash reports</strong>
+            </li>
+            <li>Create or restore an encrypted local backup without involving ChamberSathi servers</li>
+            <li>
+              Export an unencrypted JSON copy of chamber records (Settings → Export JSON) if you want
+              to leave for another app — this file is not encrypted; do not share it casually
+            </li>
+            <li>Wipe local data from the app (destructive) if you want a clean start</li>
+          </ul>
+
+          <h2>6. Data retention</h2>
+          <p>
+            Practice data remains on the device until you delete records, wipe the app, uninstall, or
+            restore over it from a backup. We do not hold a copy of your chamber on our servers.
+            Google Play and Firebase retain purchase and crash records under their own policies for
+            the limited data described above.
+          </p>
+
+          <h2>7. Children</h2>
+          <p>
+            ChamberSathi is built for practising advocates and is not directed at children. We do not
+            knowingly collect personal information from children.
+          </p>
+
+          <h2>8. Third-party services</h2>
+          <p>
+            Google Play Billing and (if you leave crash reporting on) Google Firebase Crashlytics
+            process the data in section 3 under Google’s terms. ChamberSathi does not sell your
+            information and does not use case contents for advertising.
+          </p>
+
+          <h2>9. Changes</h2>
+          <p>
+            If this policy changes, we will update the date at the top of this page. Material changes
+            that affect Play Data safety will be reflected in the Google Play listing as well.
+          </p>
+
+          <h2>10. Contact</h2>
+          <p>
+            Questions about this policy:
+            <a href="mailto:chambersathi@gmail.com">chambersathi@gmail.com</a>
+          </p>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>© 2026 ChamberSathi</div>
+        <div>
+          <a href="/">Home</a>
+          ·
+          <a href="mailto:chambersathi@gmail.com">chambersathi@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
